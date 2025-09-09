@@ -1,5 +1,5 @@
-import { loadAssets, simulateDownload } from 'utils/assets.js',
-import { Game } from './core/game.js'
+import { loadAssets, simulateDownload } from 'assets.js',
+import { Game } from 'game.js'
 
 async function bootstrap() {
   const canvas = document.getElementById('game') as HTMLCanvasElement;
