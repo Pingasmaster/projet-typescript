@@ -8,17 +8,24 @@
     width: 100%;
     height: 100%;
     font-family: sans-serif;
-    background: #68d3eb;
     overflow: hidden;
     position: relative;
-    background-image: url('./assets/wave.png'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
+    background: #68d3eb url('./assets/wave.png') repeat-x;
+    background-size: auto 100%; 
+    background-position: 0 0;
     margin: 0;
-    height: 100vh; 
+    height: 100vh;
+    animation: moveWaves 10s linear infinite;
   }
   
+  @keyframes moveWaves {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1000px 0; 
+    }
+  }
   #gameCanvas {
     display: block;
     margin: 0 auto;
